@@ -12,5 +12,5 @@ keyboard %command%
 ```  
 or  
 ```
-./absolute/path/keyboard %command%
+/absolute/path/keyboard %command%
 ```
