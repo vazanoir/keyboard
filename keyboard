@@ -26,5 +26,5 @@ if [[ "$ENV" == "sway" ]]; then
   input type:keyboard xkb_variant "$GAME_VARIANT"
   "$@"
   input type:keyboard xkb_layout "$DEFAULT_LAYOUT"
-  input type:keyboard xkb_layout "$DEFAULT_VARIANT"
+  input type:keyboard xkb_variant "$DEFAULT_VARIANT"
 fi
