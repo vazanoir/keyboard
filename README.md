@@ -8,9 +8,9 @@ Edit the script to change the layouts to your needs.
 Supported environments: x11, sway
 Exemples:  
 ```
-keyboard x11 %command%
+keyboard %command%
 ```  
 or  
 ```
-./absolute/path/keyboard sway %command%
+./absolute/path/keyboard %command%
 ```
