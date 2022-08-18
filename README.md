@@ -5,11 +5,12 @@ Little script allowing to switch keyboard before a steam game launch and changin
 ## Usage
 
 Edit the script to change the layouts to your needs.  
-Add this in your game properties launch option:  
+Supported environments: x11, sway
+Exemples:  
 ```
-keyboard %command%
+keyboard x11 %command%
 ```  
 or  
 ```
-./absolute/path/keyboard %command%
+./absolute/path/keyboard sway %command%
 ```

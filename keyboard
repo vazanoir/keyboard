@@ -1,5 +1,19 @@
 #!/usr/bin/env bash
 
-setxkbmap us
-"$@"
-setxkbmap fr bepo_afnor
+case "$1" in
+  "x11")
+    setxkbmap us
+    "$@"
+    setxkbmap fr bepo_afnor
+    ;;
+  "sway")
+    input type:keyboard {
+      xkb_layout us
+    }
+    "$@"
+    input type:keyboard {  
+      xkb_layout fr 
+      xkb_variant bepo
+    }
+    ;;
+esac
