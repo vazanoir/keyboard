@@ -5,7 +5,7 @@ Little script allowing to switch keyboard before a steam game launch and changin
 ## Usage
 
 Edit the script to change the layouts to your needs.  
-Supported environments: x11, sway
+Supported environments: x11, sway  
 Exemples:  
 ```
 keyboard %command%
