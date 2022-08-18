@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# x11 | sway
-ENV="x11"
-
 # The layout you want in game
 GAME_LAYOUT="us"
 GAME_VARIANT=""
@@ -15,16 +12,6 @@ DEFAULT_VARIANT="bepo_afnor"
 # DEFAULT_LAYOUT="us,fr"
 # DEFAULT_LAYOUT=",bepo_afnor"
 
-if [[ "$ENV" == "x11" ]]; then
-  setxkbmap "$GAME_LAYOUT" "$GAME_VARIANT"
-  "$@"
-  setxkbmap "$DEFAULT_LAYOUT" "$DEFAULT_VARIANT"
-fi
-
-if [[ "$ENV" == "sway" ]]; then
-  input type:keyboard xkb_layout "$GAME_LAYOUT"
-  input type:keyboard xkb_variant "$GAME_VARIANT"
-  "$@"
-  input type:keyboard xkb_layout "$DEFAULT_LAYOUT"
-  input type:keyboard xkb_variant "$DEFAULT_VARIANT"
-fi
+setxkbmap "$GAME_LAYOUT" "$GAME_VARIANT"
+"$@"
+setxkbmap "$DEFAULT_LAYOUT" "$DEFAULT_VARIANT"
